@@ -162,10 +162,5 @@ const txHeader = (tx, { tipHeight, mempool, feeEst, t
       <div className="py-2 small-sm">{segwitGainsView(segwitGains, t)}</div>
     </div> }
 
-    <div>
-      <div>{t`Privacy analysis`}</div>
-      <div className="py-2 small-sm">{privacyAnalysisView(privacyAnalysis, t)}</div>
-    </div>
-
   </div>)
 }

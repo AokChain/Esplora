@@ -14,9 +14,7 @@ export default ({ t, page }) =>
         <div className="footer-links">
           { process.env.IS_ELEMENTS && [ <a href={`asset/${nativeAssetId}`}>Pegs</a>, ' | ' ] }
           { process.env.ASSET_MAP_URL && [ <a href="assets">Assets</a>, ' | ' ] }
-          <a href="tx/push">{t`Broadcast tx`}</a> {' | '}
-          { hasCam ? [ <a href="scan-qr">{t`Scan QR`}</a>, ' | '] : '' }
-          <a href="https://github.com/Blockstream/esplora/blob/master/API.md">{t`API`}</a>
+          <a href="tx/push">{t`Broadcast Transaction`}</a>
         </div>
       </div>
 

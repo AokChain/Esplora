@@ -132,8 +132,7 @@ export default ({ t, addr, addrQR, addrTxs, goAddr, openTx, spends, tipHeight, l
 }
 
 const fmtTxos = (count, sum, t) =>
-  (count > 0 ? t`${formatNumber(count)} outputs` : t`No outputs`)
-+ (sum > 0 ? ` (${formatSat(sum)})` : '')
+  (t`${formatSat(sum)}`)
 
 const txsShownText = (total, start, shown, t) =>
   (total > perPage && shown > 0)
